@@ -1,16 +1,3 @@
-"""
-ASGI config for myport project.
-
-It exposes the ASGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
-"""
-
-import os
-
-from django.core.asgi import get_asgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myport.settings')
-
-application = get_asgi_application()
+version https://git-lfs.github.com/spec/v1
+oid sha256:623d20e9a1c971e8b1b8f3528f0784faa20ce4dda6303a8febe865c90e74674a
+size 405

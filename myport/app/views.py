@@ -1,24 +1,3 @@
-from django.shortcuts import render, redirect
-from .models import * 
-from . forms import ContactForm,ResumeForm
-
-# Create your views here.
-
-def home(request):
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-        fname = request.POST['firstname']
-        lname = request.POST['lastname']
-        email = request.POST['email']
-        country = request.POST['country']
-        message = request.POST['message']
-        parent = ContactMe.objects.create(
-            name = fname+" "+lname,
-            email = email,
-            location = country,
-            message = message
-        )
-        parent.save()
-    else:
-        form = ContactForm()
-    return render(request, 'app/home.html', {'form': form})
+version https://git-lfs.github.com/spec/v1
+oid sha256:386570aac1efba5dd1454fb091f06d53c3c9d050c37c5e4a0a6f43113cd570b2
+size 759
